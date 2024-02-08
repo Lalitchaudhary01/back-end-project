@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { ragisterUser } from "../controllers/user.controller";
+import { registerUser } from "../controllers/user.controller.js";
 
 const router = Router();
 
-router.route("./ragister").post(ragisterUser);
+router.post("/register", registerUser);
 
 export default router;
